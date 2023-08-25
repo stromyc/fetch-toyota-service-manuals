@@ -71,6 +71,8 @@ And, yes, you can specify a year that the car wasn't made in-- but, if you do, t
 To download manuals, run `yarn start -e YOUREMAIL -p YOURPASSWORD -m MANUALID -m ANOTHERMANUALID -m ...` with
 the manual IDs replaced with yours. You can use `-m` an unlimited number of times.
 
+Note:  Passwords that contain any of the following characters, !#$^&*?[](){}<>~; may need to be proceeded with \.  For example,  mypassword! would need to be changed to mypassword\!  , escaping the special character.
+
 The script will automatically log in as you, read each manual's Table of Contents, and download every page unless you specify a year-- see [above](#decide-if-you-only-want-your-model-years-pages).
 
 **DO NOT log in to TIS while the bot is downloading.** TIS enforces a one-session-at-a-time policy, and if
